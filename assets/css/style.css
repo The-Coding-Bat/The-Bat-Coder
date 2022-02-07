@@ -26,7 +26,7 @@ header h1 {
     color: rgb(0, 0, 0);
     position: absolute;
     top: 10px;
-    left: 400px;
+    left: 450px;
     text-shadow: 3px 3px 7px darkred;
 }
 
@@ -40,12 +40,12 @@ header img {
 header div {
     display: inline;
     position: relative;
-    height: 50px;
+    height: 65px;
     width: 75%;
     padding: 10px;
     border: 10px solid navy;
     margin: auto;
-    bottom: 193px;
+    bottom: 205px;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
@@ -78,15 +78,6 @@ header nav ul li a {
 
 a:active {
       color:red;
-  }
-
-.ted-image {
-    float: left;
-    height: 10px;
-    padding: 20px;
-    border: 10px solid navy;
-    height: 350px;
-    border-radius: 25px;
   }
 
 .summary-box {
@@ -124,21 +115,30 @@ a:active {
  }
 
  .ted-image {
-     margin: 25px 30px auto 20px;
-     top: 100px;
+     margin: 25px 30px 0 20px;
      position: relative;
-     top: -50px;
+     top: -30px;
+     width: 350Spx;
+     height: 450px;
+     float: left;
+     padding: 20px;
+     border: 10px solid navy;
+     border-radius: 25px;
+     background-color: red;
  }
 
 .tedinfo {
     float: left;
-    width: 60%;
+    width: 55%;
+    height: 400px;
     padding: 50px;
-    margin: 0 auto 70px auto;
-    background-color: dodgerblue;
+    border: 2px solid darkred;
+    top: 30px;
+    margin: 0 auto 70px 0px;
+    background-color: royalblue;
     left: 100px;
     color: rgb(0, 0, 0);
-    top: 30px;
+    font-size: 18px;
     text-align: center;
     flex: 1;
   }
@@ -147,7 +147,6 @@ a:active {
       background-color: navy;
       margin: auto;
       height: 100px;
-      bottom: -300px;
       position: relative;
       border: 5px solid darkred;
   }
