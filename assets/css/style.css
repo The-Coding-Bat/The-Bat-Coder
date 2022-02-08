@@ -10,6 +10,7 @@ body {
 }
 
 header {
+    position: relative;
     text-align: center;
     height: 600px;
     width: auto;
@@ -25,16 +26,34 @@ header h1 {
     -webkit-text-stroke: 2px rgb(24, 0, 160);
     color: rgb(0, 0, 0);
     position: absolute;
-    top: 10px;
+    top: -650px;
     left: 285px;
     text-shadow: 3px 3px 7px darkred;
 }
 
-header img {
+#thebat {
     position: relative;
     height: 700px;
     top: -100px;
-    -webkit-filter: drop-shadow(15px 15px 15px darkred);
+}
+
+#thebat:hover {
+    background-image: url(../images/bat-png.png);
+    background-position: center;
+    background-size: 1225px;
+    background-repeat: no-repeat;
+    filter: saturate(3);
+    filter: drop-shadow(15px 15px 15px darkred);
+    margin: 0;
+    padding: 0;
+}
+
+#githublink {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
 }
 
 header div {
@@ -45,7 +64,7 @@ header div {
     padding: 10px;
     border: 10px solid navy;
     margin: auto;
-    bottom: 193px;
+    bottom: 190px;
     background-color: rgb(0, 0, 0);
     display: flex;
     flex-wrap: wrap;
@@ -65,6 +84,9 @@ header nav li {
 
 header nav ul li a {
     padding: 10px 15px;
+    position: relative;
+    right: 40px;
+    top: -3px;
     border: 1px solid rgb(255, 255, 255);
     margin-right: 5px;
     font-weight: lighter;
@@ -115,7 +137,7 @@ a:active {
  }
 
  .ted-image {
-     margin: 25px 30px 0 20px;
+     margin: 25px 30px 0 30px;
      position: relative;
      top: -30px;
      width: 350Spx;
@@ -129,17 +151,23 @@ a:active {
 .tedinfo {
     float: left;
     width: 55%;
-    height: 400px;
+    height: 430px;
     padding: 50px;
     border: 2px solid darkred;
     top: 30px;
-    margin: 0 auto 70px 0px;
+    margin: 0 auto 70px 60px;
     background-color: royalblue;
     left: 100px;
     color: rgb(0, 0, 0);
     font-size: 18px;
     text-align: center;
     flex: 1;
+  }
+
+  .tedinfo h2 {
+      color: red;
+      -webkit-text-stroke: 2px black;
+      font-size: 30px;
   }
 
   footer {
