@@ -1,16 +1,19 @@
+/* Universal Styling */
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+/* Body Styling */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    background-image: url();
-    background-repeat: no-repeat;
-    background-size: auto;
 }
+
+/* Header Styling */
 
 header {
     position: relative;
@@ -21,6 +24,8 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
 }
 
 header h1 {
@@ -29,8 +34,8 @@ header h1 {
     -webkit-text-stroke: 2px rgb(24, 0, 160);
     color: rgb(0, 0, 0);
     position: absolute;
-    top: -650px;
-    left: 285px;
+    left: 425px;
+    top: 20px;
     text-shadow: 3px 3px 7px darkred;
 }
 
@@ -38,17 +43,19 @@ header h1 {
     position: relative;
     height: 700px;
     top: -100px;
+    right: 70px;
 }
 
 #thebat:hover {
     background-image: url(../images/bat-png.png);
-    background-position: center;
     background-size: 1225px;
     background-repeat: no-repeat;
     filter: saturate(3);
     filter: drop-shadow(15px 15px 15px darkred);
     margin: 0;
     padding: 0;
+    justify-content: center;
+    
 }
 
 .batlink:hover {
@@ -64,18 +71,17 @@ header h1 {
 }
 
 header div {
-    display: inline;
     position: relative;
     height: 50px;
-    width: 75%;
+    width: 100%;
     padding: 10px;
     border: 10px solid navy;
     margin: auto;
-    bottom: 190px;
+    top: 510px;
+    right: 150px;
     background-color: rgb(0, 0, 0);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex: 1;
+    justify-content: space-around;
 }
 
 header nav ul {
@@ -85,6 +91,7 @@ header nav ul {
 
 header nav li {
     display: inline-block;
+    flex: auto;
 }
 
 header nav ul li a {
@@ -100,12 +107,16 @@ header nav ul li a {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
+
+  /* Anchor Styling */
 
 a:active {
       color:red;
   }
+
+  /* Summary Box Styling */
 
 .summary-box {
     color: black;
@@ -120,8 +131,8 @@ a:active {
     border-bottom: 7px solid navy;
     background-image: url(../images/codingbackground.webp);
     background-size: auto;
-    float: none;
     text-align: center;
+    justify-content: center;
 }
 
 .summary-box img {
@@ -134,12 +145,16 @@ a:active {
     text-align: center;
 }
 
+/* HR line Styling */
+
 .line-break {
     border: 2px solid blue;
     width: 90%;
     margin: auto;
     background-color: blue;
  }
+
+ /* Images and Texts Styling */
 
 .images-border {
      display: inline-block;
@@ -151,6 +166,7 @@ a:active {
      padding: 20px;
      border: 10px solid navy;
      border-radius: 25px;
+     flex-wrap: wrap;
  }
 
 .run-buddy-text {
@@ -158,7 +174,7 @@ a:active {
      font-weight: bold;
      font-size: 32px;
      color: #fce138;
-     -webkit-text-stroke: navy;
+     -webkit-text-stroke: 2px navy;
      position: relative;
      bottom: 40px;
      left: 80px;
@@ -166,14 +182,20 @@ a:active {
 
 .image-hover-color:hover {
      background-color: navy;
-     opacity: 10;
+     opacity: 1.0;
  }
+
+ /* Application Section Styling */
+
 
 .applications {
      display: flex;
      flex-wrap: wrap;
-     justify-content: space-between;
+     justify-content: center;
+     flex-direction: row;
  }
+
+ /* Float Classes Styling */
 
 .float-left {
      float: left;
@@ -182,6 +204,8 @@ a:active {
 .float-right {
      float: right;
  }
+
+ /* Article Styling */
 
 .tedinfo {
     width: 55%;
@@ -203,6 +227,8 @@ a:active {
       -webkit-text-stroke: 2px black;
       font-size: 30px;
   }
+
+  /* Contact Section Styling */
 
 #contact nav ul div {
     display: inline;
