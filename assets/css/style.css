@@ -7,6 +7,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 header {
@@ -48,12 +51,16 @@ header h1 {
     padding: 0;
 }
 
-#githublink {
+.batlink:hover {
+    filter: drop-shadow(15px 15px 15px darkred);
+}
+
+.links {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 0;
-    width: 0;
+    height: 300px;
+    width: 300px;
 }
 
 header div {
@@ -76,8 +83,6 @@ header nav ul {
     display: inline;
 }
 
-
-
 header nav li {
     display: inline-block;
 }
@@ -85,7 +90,7 @@ header nav li {
 header nav ul li a {
     padding: 10px 15px;
     position: relative;
-    right: 40px;
+    right: 0px;
     top: -3px;
     border: 1px solid rgb(255, 255, 255);
     margin-right: 5px;
@@ -136,20 +141,49 @@ a:active {
     background-color: blue;
  }
 
- .ted-image {
+.images-border {
+     display: inline-block;
      margin: 25px 30px 0 30px;
      position: relative;
      top: -30px;
      width: 350Spx;
      height: 450px;
-     float: left;
      padding: 20px;
      border: 10px solid navy;
      border-radius: 25px;
  }
 
+.run-buddy-text {
+     font-style: italic;
+     font-weight: bold;
+     font-size: 32px;
+     color: #fce138;
+     -webkit-text-stroke: navy;
+     position: relative;
+     bottom: 40px;
+     left: 80px;
+ }
+
+.image-hover-color:hover {
+     background-color: navy;
+     opacity: 10;
+ }
+
+.applications {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+.float-left {
+     float: left;
+ }
+
+.float-right {
+     float: right;
+ }
+
 .tedinfo {
-    float: left;
     width: 55%;
     height: 430px;
     padding: 50px;
@@ -164,10 +198,50 @@ a:active {
     flex: 1;
   }
 
-  .tedinfo h2 {
+.tedinfo h2 {
       color: red;
       -webkit-text-stroke: 2px black;
       font-size: 30px;
+  }
+
+#contact nav ul div {
+    display: inline;
+    position: relative;
+    height: 50px;
+    width: 75%;
+    padding: 10px;
+    border: 10px solid navy;
+    margin: auto;
+    bottom: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+#contact nav ul {
+    list-style: none;
+    display: inline;
+}
+
+#contact nav li {
+    display: inline-block;
+}
+
+#contact nav ul li a {
+    padding: 10px 15px;
+    position: relative;
+    right: 0px;
+    top: -3px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 5px;
+    font-weight: lighter;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   footer {
