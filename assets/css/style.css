@@ -19,13 +19,14 @@ header {
     position: relative;
     text-align: center;
     height: 600px;
-    width: auto;
     background-image: url(../images/codingbackground.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    z-index: 9999;
 }
 
 header h1 {
@@ -48,10 +49,10 @@ header h1 {
 
 #thebat:hover {
     background-image: url(../images/bat-png.png);
-    background-size: 1225px;
+    background-size: 1220px;
     background-repeat: no-repeat;
     filter: saturate(3);
-    filter: drop-shadow(15px 15px 15px darkred);
+    filter: drop-shadow(20px 20px 20px darkred);
     margin: 0;
     padding: 0;
     justify-content: center;
@@ -107,7 +108,6 @@ header nav ul li a {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
   }
 
   /* Anchor Styling */
@@ -132,14 +132,12 @@ a:active {
     background-image: url(../images/codingbackground.webp);
     background-size: auto;
     text-align: center;
-    justify-content: center;
 }
 
 .summary-box img {
     height: -1100px;
     width: 400px;
     position: relative;
-    align-self: center;
     left: 10px;
     bottom: -10px;
     text-align: center;
@@ -161,7 +159,7 @@ a:active {
      margin: 25px 30px 0 30px;
      position: relative;
      top: -30px;
-     width: 350Spx;
+     width: 350px;
      height: 450px;
      padding: 20px;
      border: 10px solid navy;
@@ -180,7 +178,11 @@ a:active {
      left: 80px;
  }
 
-.image-hover-color:hover {
+ .images-edit {
+     height: 450px;
+     width: 350px;
+ }
+.images-edit:hover {
      background-color: navy;
      opacity: 1.0;
  }
@@ -192,7 +194,6 @@ a:active {
      display: flex;
      flex-wrap: wrap;
      justify-content: center;
-     flex-direction: row;
  }
 
  /* Float Classes Styling */
@@ -218,8 +219,8 @@ a:active {
     left: 100px;
     color: rgb(0, 0, 0);
     font-size: 18px;
-    text-align: center;
     flex: 1;
+    text-align: center;
   }
 
 .tedinfo h2 {
@@ -270,10 +271,182 @@ a:active {
     justify-content: space-between;
   }
 
-  footer {
+footer {
       background-color: navy;
       margin: auto;
       height: 100px;
       position: relative;
       border: 5px solid darkred;
   }
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    /* this will be applied on any screen smaller than 980px */
+  
+      header h1 a {
+        padding: 0;
+      justify-content: center;
+      position: relative;
+      }
+     
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a:hover {
+        font-size: 20px;
+      }
+    
+      footer h2, footer div {
+        text-align: center;
+        width: 100%;
+      }
+  
+      .hero-cta, .hero-form {
+        width: 100%;
+      }
+      
+      .hero-cta {
+        text-align: center;
+      }
+  
+      .section-title {
+        width: 80%;
+      }
+      
+      .trainer {
+        flex: 0 70%;
+      }
+      
+      .contact-info iframe{
+        flex: 1 100%;
+      }
+  
+    }
+
+    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    /* this will be applied on any screen smaller than 980px */
+
+    header {
+        height: 250px;
+        width: 690px;
+        left: 11%;
+    }
+
+    #thebat {
+        position: relative;
+        height: 300px;
+        top: -50px;
+        right: 100px;
+    }
+
+    header h1 {
+        font-size: 30px;
+        left: 0px;
+        top: 20px;
+    }
+
+    header div {
+        height: 20px;
+        width: 100%;
+        top: -110px;
+        right:10px;
+    }
+
+    header nav ul li a {
+        right: 0px;
+        top: -6px;
+        font-size: 1vw;
+        flex-direction: row;
+      }
+
+    #thebat:hover {
+        background-size: 500px;
+        left: -85px;
+      }
+
+    .tedinfo {
+          float: none;
+          bottom: 30px;
+          font-size: 12px;
+          display: block;
+          right: 500px;
+          height: 300px;
+          position: relative;
+      }
+
+    .tedinfo h2 {
+        color: red;
+        -webkit-text-stroke: 2px black;
+        font-size: 22px;
+    }
+
+    .summary-box {
+        font-size: 25px;
+        width: 500px;
+        height: 250px;
+        right: -500px;
+    }
+
+    .images-border {
+        top: -30px;
+        width: 250px;
+        height: 350px;
+        right: 100px;
+        float: none;
+    }
+
+    .images-edit {
+        width: 250px;
+        height: 350px;
+    }
+
+    #about .images-border {
+        left: 250px;
+    }
+
+    #skills .images-border {
+        right: -300px;
+    }
+
+    #work .images-border {
+        left: 3%;
+    }
+
+    #services .images-border {
+        left: 275px;
+    }
+
+    .line-break {
+          width: 100%;
+      }
+
+      #contact nav ul div {
+        position: relative;
+        height: 50px;
+        width: 67%;
+        padding: 10px;
+        border: 10px solid navy;
+        right: 10px;
+      }
+
+      footer {
+          width: 100%;
+      }
+      
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) { 
+    /* this will be applied on any screen between 768px and 575px */
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+      /* this will be applied on any screen smaller than 575px */
