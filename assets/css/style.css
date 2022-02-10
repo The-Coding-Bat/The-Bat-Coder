@@ -59,6 +59,11 @@ header h1 {
     
 }
 
+.batlink { 
+    height: 150px;
+    width: 10px;
+    top: -10px;
+}
 .batlink:hover {
     filter: drop-shadow(15px 15px 15px darkred);
 }
@@ -127,8 +132,8 @@ a:active {
     color: red;
     -webkit-text-stroke: rgb(0, 0, 0) 2px;
     font-size: 25px;
-    width: 500px;
-    height: 250px;
+    width: 400px;
+    height: 150px;
     margin: 100px auto 100px auto;
     padding-bottom: 20px;
     border: 4px solid navy;
@@ -206,7 +211,6 @@ a:active {
      justify-content: center;
  }
 
- /* Float Classes Styling */
 
 
 
@@ -218,9 +222,8 @@ a:active {
     padding: 50px;
     border: 2px solid darkred;
     top: 30px;
-    margin: 0 auto 70px 190px;
     background-color: royalblue;
-    left: 100px;
+   margin: auto 500px 50px auto;
     color: rgb(0, 0, 0);
     font-size: 18px;
     flex-wrap: wrap;
@@ -240,15 +243,14 @@ a:active {
       float: right;
       width: 700px;
       height: fit-content;
-      margin-right: 50px;
+      margin-right: 70px;
     }
 
-#skills .tedinfo {
-    left: 50%;
+    .article-movement {
+        float: left;
+        margin-left: 25%;
+    }
 
-  }
-
-  
 
   /* Contact Section Styling */
 
@@ -292,6 +294,8 @@ a:active {
     justify-content: space-between;
   }
 
+  /* Footer Styling */
+
 footer {
       background-color: navy;
       margin: auto;
@@ -303,12 +307,59 @@ footer {
       flex-wrap: wrap;
 }
 
-@media screen and (min-width: 640px) {
-    .flex-container {
-        display: flex;
+    
+@media  only screen and (min-width:480px) and (max-width:768px) {
+
+    header h1 {
+        left: 20px;
+
+    .line-break {
+        width: 100%;
+    }
+
+    header div {
+        position: relative;
+        height: 100px;
+        width: 100%;
+        padding: 10px;
+        border: 10px solid navy;
+        margin: auto;
+        bottom: 1000px;
+        right: 150px;
+        background-color: rgb(0, 0, 0);
+        flex: 1;
+        justify-content: space-around;
+    }
+
+    footer{
+        width: 100%;
     }
     
-    #about {
-        flex: 1;
+    .applications {
+        margin-right: 170px;
+    }
+
+    .tedinfo {
+        width: 100px;
+        float: right;
+    }
+
+    #thebat {
+        height: 500px;
+        top: 50px;
+        position: absolute;
+    }
+
+    .images-border{
+            display: inline-block;
+            margin: 25px 30px 0 30px;
+            position: relative;
+            top: -30px;
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            border: 10px solid navy;
+            border-radius: 25px;
+            flex-wrap: wrap;
     }
 }
