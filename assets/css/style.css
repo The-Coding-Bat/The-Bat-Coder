@@ -6,6 +6,8 @@
     border: 0;
 }
 
+
+
 /* Body Styling */
 
 body {
@@ -45,6 +47,7 @@ header h1 {
     height: 700px;
     top: -100px;
     right: 70px;
+    flex: 1 70%;
 }
 
 #thebat:hover {
@@ -53,8 +56,6 @@ header h1 {
     background-repeat: no-repeat;
     filter: saturate(3);
     filter: drop-shadow(20px 20px 20px darkred);
-    margin: 0;
-    padding: 0;
     justify-content: center;
     
 }
@@ -64,25 +65,24 @@ header h1 {
     width: 10px;
     top: -10px;
 }
+
 .batlink:hover {
     filter: drop-shadow(15px 15px 15px darkred);
 }
 
 .links {
     position: relative;
-    margin: 0;
-    padding: 0;
     height: 300px;
     width: 300px;
 }
 
 header div {
+    display: flex;
     position: relative;
     height: 50px;
     width: 100%;
     padding: 10px;
     border: 10px solid navy;
-    margin: auto;
     top: 510px;
     right: 150px;
     background-color: rgb(0, 0, 0);
@@ -107,14 +107,13 @@ header nav ul li a {
     padding: 10px 15px;
     position: relative;
     right: 0px;
-    top: -3px;
+    top: 7px;
     border: 1px solid rgb(255, 255, 255);
     margin-right: 5px;
     font-weight: lighter;
     font-size: 2vw;
     color: white;
     background-color: black;
-    display: flex;
     flex-wrap: wrap;
   }
 
@@ -156,8 +155,7 @@ a:active {
 
 .line-break {
     border: 2px solid blue;
-    width: 90%;
-    margin: auto;
+    width: 100%;
     background-color: blue;
  }
 
@@ -165,7 +163,6 @@ a:active {
 
 .images-border {
      display: inline-block;
-     margin: 25px 30px 0 30px;
      position: relative;
      top: -30px;
      width: 350px;
@@ -174,10 +171,13 @@ a:active {
      border: 10px solid navy;
      border-radius: 25px;
      flex-wrap: wrap;
+     margin-bottom: 15px;
  }
 
  #about .images-border {
-     left: 50px;
+    margin-left: 250px;
+    height: fit-content;
+    width: fit-content;
  }
 
 .run-buddy-text {
@@ -187,7 +187,7 @@ a:active {
      color: #fce138;
      -webkit-text-stroke: 2px navy;
      position: relative;
-     bottom: 40px;
+     bottom: 50px;
      left: 80px;
  }
 
@@ -208,7 +208,9 @@ a:active {
 .applications {
      display: flex;
      flex-wrap: wrap;
-     justify-content: center;
+     justify-content: space-around;
+     align-content: center;
+     margin-right: 90px;
  }
 
 
@@ -216,40 +218,32 @@ a:active {
 
  /* Article Styling */
 
-.tedinfo {
-    width: 70%;
-    height: 430px;
+article {
+    box-sizing: border-box;
+    width: 40%;
+    height: 400px;
     padding: 50px;
+    float: right;
     border: 2px solid darkred;
     top: 30px;
+    left: 300px;
+    margin-right: 100px;
     background-color: royalblue;
-   margin: auto 500px 50px auto;
     color: rgb(0, 0, 0);
     font-size: 18px;
+    display: flex;
     flex-wrap: wrap;
     flex: 1 70%;
     text-align: center;
-    align-self: center;
   }
 
-.tedinfo h2 {
+article h2 {
       color: red;
       -webkit-text-stroke: 2px black;
       font-size: 30px;
       flex-wrap: wrap;
+      text-align: center;
   }
-
-#about .tedinfo {
-      float: right;
-      width: 700px;
-      height: fit-content;
-      margin-right: 70px;
-    }
-
-    .article-movement {
-        float: left;
-        margin-left: 25%;
-    }
 
 
   /* Contact Section Styling */
@@ -310,8 +304,15 @@ footer {
     
 @media  only screen and (min-width:480px) and (max-width:768px) {
 
+    header {
+        height: 300px;
+    }
+
     header h1 {
-        left: 20px;
+        left: 30%;
+        font-size: 25px;
+
+    }
 
     .line-break {
         width: 100%;
@@ -319,47 +320,84 @@ footer {
 
     header div {
         position: relative;
-        height: 100px;
-        width: 100%;
-        padding: 10px;
-        border: 10px solid navy;
-        margin: auto;
-        bottom: 1000px;
-        right: 150px;
-        background-color: rgb(0, 0, 0);
-        flex: 1;
-        justify-content: space-around;
+        height: 30px;
+        width: 75%;
+        right: -60px;
+        top: -50px;
+        display: flex;
+        flex-direction: row;
+        border: none;
     }
+
+    header nav ul li a {
+        right: 0px;
+        top: 10px;
+        flex-wrap: wrap;
+      }
 
     footer{
         width: 100%;
-    }
-    
-    .applications {
-        margin-right: 170px;
+        right: -3px;
+        flex: 1 70%
     }
 
-    .tedinfo {
-        width: 100px;
-        float: right;
+    #about .images-border {
+        left: -115px;
+    }
+
+
+    .images-edit {
+        width: 350px;
+        height: 450px;
+         position: static;
+    }
+
+    
+    .applications {
+        position: relative;
+        left:  45px;
+        font-size: 13px;
+    }
+
+
+    article {
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap ;
+       margin: auto auto 20px 30px;
     }
 
     #thebat {
-        height: 500px;
-        top: 50px;
-        position: absolute;
+        height: 300px;
+        top: -20px;
+        right: 100px;
     }
 
-    .images-border{
-            display: inline-block;
-            margin: 25px 30px 0 30px;
-            position: relative;
-            top: -30px;
-            width: 300px;
-            height: 400px;
-            padding: 20px;
-            border: 10px solid navy;
-            border-radius: 25px;
-            flex-wrap: wrap;
+    #thebat:hover {
+        background-image: url(../images/bat-png.png);
+        background-size: 500px;
     }
+
+
+    #contact nav ul div {
+       
+        height: 50px;
+        width: 70%;
+        padding: 10px;
+        border: 10px solid navy;
+        margin: auto;
+        bottom: 50px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    #contact nav ul li a {
+        right: 0px;
+        top: 10px;
+        font-size: 15px;
+        flex-shrink: 70%;
+      }
 }
