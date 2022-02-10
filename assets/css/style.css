@@ -87,7 +87,10 @@ header div {
 
 header nav ul {
     list-style: none;
-    display: inline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 header nav li {
@@ -117,6 +120,7 @@ a:active {
   }
 
   /* Summary Box Styling */
+
 
 .summary-box {
     color: black;
@@ -167,6 +171,10 @@ a:active {
      flex-wrap: wrap;
  }
 
+ #about .images-border {
+     left: 50px;
+ }
+
 .run-buddy-text {
      font-style: italic;
      font-weight: bold;
@@ -181,6 +189,7 @@ a:active {
  .images-edit {
      height: 450px;
      width: 350px;
+     flex-wrap: wrap;
  }
 .images-edit:hover {
      background-color: navy;
@@ -188,6 +197,7 @@ a:active {
  }
 
  /* Application Section Styling */
+
 
 
 .applications {
@@ -198,36 +208,47 @@ a:active {
 
  /* Float Classes Styling */
 
-.float-left {
-     float: left;
- }
 
-.float-right {
-     float: right;
- }
 
  /* Article Styling */
 
 .tedinfo {
-    width: 55%;
+    width: 70%;
     height: 430px;
     padding: 50px;
     border: 2px solid darkred;
     top: 30px;
-    margin: 0 auto 70px 60px;
+    margin: 0 auto 70px 190px;
     background-color: royalblue;
     left: 100px;
     color: rgb(0, 0, 0);
     font-size: 18px;
-    flex: 1;
+    flex-wrap: wrap;
+    flex: 1 70%;
     text-align: center;
+    align-self: center;
   }
 
 .tedinfo h2 {
       color: red;
       -webkit-text-stroke: 2px black;
       font-size: 30px;
+      flex-wrap: wrap;
   }
+
+#about .tedinfo {
+      float: right;
+      width: 700px;
+      height: fit-content;
+      margin-right: 50px;
+    }
+
+#skills .tedinfo {
+    left: 50%;
+
+  }
+
+  
 
   /* Contact Section Styling */
 
@@ -277,142 +298,17 @@ footer {
       height: 100px;
       position: relative;
       border: 5px solid darkred;
-  }
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+}
 
-
-    /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-    /* this will be applied on any screen smaller than 980px */
-
-    header {
-        height: 250px;
+@media screen and (min-width: 640px) {
+    .flex-container {
+        display: flex;
     }
-
-    #thebat {
-        position: relative;
-        height: 300px;
-        top: -50px;
-        right: -100px;
+    
+    #about {
+        flex: 1;
     }
-
-    header h1 {
-        font-size: 30px;
-        left: 250px;
-        top: 20px;
-    }
-
-    header div {
-        height: 20px;
-        width: 100%;
-        top: -110px;
-        right:10px;
-    }
-
-    header nav ul li a {
-        right: 0px;
-        top: -6px;
-        font-size: 1vw;
-        flex-direction: row;
-      }
-
-    #thebat:hover {
-        background-size: 500px;
-        left: 115px;
-      }
-
-    .tedinfo {
-          float: none;
-          bottom: 30px;
-          font-size: 14px;
-          display: block;
-          right: 500px;
-          height: 400px;
-          position: relative;
-      }
-
-    .tedinfo h2 {
-        color: red;
-        -webkit-text-stroke: 2px black;
-        font-size: 22px;
-    }
-
-    .summary-box {
-        font-size: 25px;
-        width: 500px;
-        height: 250px;
-        right: -500px;
-    }
-
-    .images-border {
-        top: -30px;
-        width: 250px;
-        height: 350px;
-        right: 150px;
-        float: none;
-    }
-
-    .images-edit {
-        width: 250px;
-        height: 350px;
-    }
-
-    #about .images-border {
-        left: 300px;
-    }
-
-    #skills .images-border {
-        left: 300px;
-    }
-
-    #work .images-border {
-      left: 1%;
-    }
-
-    .run-buddy-text {
-        font-style: italic;
-        font-weight: bold;
-        font-size: 32px;
-        color: #fce138;
-        -webkit-text-stroke: 2px navy;
-        position: relative;
-        bottom: 40px;
-        left: 30px;
-    }
-
-    #services .images-border {
-        left: 300px;
-    }
-
-    .line-break {
-          width: 100%;
-      }
-
-      #contact nav ul div {
-        position: relative;
-        height: 50px;
-        width: 67%;
-        padding: 10px;
-        border: 10px solid navy;
-        right: 10px;
-      }
-
-      #contact nav ul li a {
-        padding: 10px 15px;
-        position: relative;
-        right: 0px;
-        top: 5px;
-        
-      }
-
-      footer {
-          width: 100%;
-      }
-      
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) { 
-    /* this will be applied on any screen between 768px and 575px */
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-      /* this will be applied on any screen smaller than 575px */
+}
