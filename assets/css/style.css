@@ -29,6 +29,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     z-index: 9999;
+    border: 2px solid darkred;
 }
 
 header h1 {
@@ -301,15 +302,76 @@ footer {
       flex-wrap: wrap;
 }
 
+@media only screen and (min-width: 986px) and (max-width: 1225px){
+
+    #about .images-border {
+        left: 40px;
+    }
+
+    .applications {
+        margin-left: 100px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 60px;
+        float: right;
+    }
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 985px){
+
+    header {
+      width: 100%;  
+    } 
+
+    header div {
+        top: 100px;
+        right: 0px;
+    }
+
+    header h1 {
+        left: 90px;
+    }
+
+
+    #about .images-border {
+        left: 50px;
+        top: -50px;
+    }
+
+    #thebat {
+        right: 460px;
+    }
+
+    .about {
+        flex-direction: row;
+    }
     
-@media  only screen and (min-width:414px) and (max-width:768px) {
+    article {
+        float: right;
+        width: 100%;
+        bottom: 100px;
+        margin-bottom: 60px;
+        text-align: right;
+        }
+
+    .line-break {
+        width: 100%;
+    }
+}
+    
+@media only screen and (min-width:414px) and (max-width:768px) {
 
     header {
         height: 300px;
     }
 
     header h1 {
-        left: 30%;
+        left: 70px;
         font-size: 25px;
 
     }
@@ -321,8 +383,8 @@ footer {
     header div {
         position: relative;
         height: 30px;
-        width: 75%;
-        right: -60px;
+        width: 100%;
+        right: 10px;
         top: -50px;
         display: flex;
         flex-direction: row;
@@ -338,11 +400,10 @@ footer {
     footer{
         width: 100%;
         right: -3px;
-        flex: 1 70%
     }
 
     #about .images-border {
-        left: -115px;
+        left: -250px;
     }
 
 
@@ -357,6 +418,7 @@ footer {
         position: relative;
         left:  45px;
         font-size: 13px;
+        flex-direction: column;
     }
 
 
@@ -367,10 +429,14 @@ footer {
        margin: auto auto 20px 30px;
     }
 
+    article h2 {
+        font-size: 23px
+    }
+
     #thebat {
         height: 300px;
         top: -20px;
-        right: 100px;
+        right: 120px;
     }
 
     #thebat:hover {
@@ -382,7 +448,7 @@ footer {
     #contact nav ul div {
        
         height: 50px;
-        width: 70%;
+        width: 90%;
         padding: 10px;
         border: 10px solid navy;
         margin: auto;
@@ -400,4 +466,76 @@ footer {
         font-size: 15px;
         flex-shrink: 70%;
       }
+}
+
+@media only screen and (min-width:375px) and (max-width: 413px) {
+
+    header {
+        width: 100%;
+        height: 100px;
+}
+
+    header h1 {
+        font-size: 32px;
+        left: -10px;
+    }
+
+    header div {
+        bottom: 200px;
+    }
+
+    #thebat {
+        width: 200px;
+        height: 300px;
+        left: 300px;
+        display: none;
+    }
+
+    #thebat:hover {
+        background-size: 500px;
+    }
+
+    .images-border {
+        width: 300px;
+        height: 400px;
+        flex-shrink: 30%;
+    }
+
+    .images-edit {
+        width: 300px;
+        height: 400px;
+    }
+    
+
+    #about .images-border{
+        left:-230px;
+    }
+
+    header div {
+        height: 30px;
+        width: 100%;
+        top: -150px;
+        right: 10px;     
+        border: none;
+    }
+
+    article {
+        width: 100%;
+        margin: 0 0 20px 60px;
+        font-size: 15px;
+    }
+
+    .applications {
+        margin-right: -30px;
+        flex: 0 50% 300px;
+    }
+
+    .summary-box {
+        width: 300px;
+    }
+
+    .batlink { 
+        display: none;
+    }
+
 }
