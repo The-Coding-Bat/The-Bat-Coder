@@ -46,15 +46,13 @@ header h1 {
 #thebat {
     position: relative;
     height: 700px;
+    width: 1300px;
     top: -100px;
-    right: 70px;
+    right: 40px;
     flex: 1 70%;
 }
 
 #thebat:hover {
-    background-image: url(../images/bat-png.png);
-    background-size: 1220px;
-    background-repeat: no-repeat;
     filter: saturate(3);
     filter: drop-shadow(20px 20px 20px darkred);
     justify-content: center;
@@ -211,10 +209,7 @@ a:active {
      flex-wrap: wrap;
      justify-content: space-around;
      align-content: center;
-     margin-right: 90px;
  }
-
-
 
 
  /* Article Styling */
@@ -302,16 +297,17 @@ footer {
       flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 986px) and (max-width: 1225px){
+@media only screen and (min-width: 986px) and (max-width: 1280px){
 
     #about .images-border {
-        left: 40px;
+        left: 180px;
     }
 
     .applications {
         margin-left: 100px;
         flex-direction: row;
         justify-content: space-around;
+        right: -100px;;
     }
 
     article {
@@ -319,10 +315,14 @@ footer {
         margin-bottom: 60px;
         float: right;
     }
+
+    #thebat {
+        left: -90px;
+    }
 }
 
 
-@media only screen and (min-width: 767px) and (max-width: 985px){
+@media only screen and (min-width: 768px) and (max-width: 985px){
 
     header {
       width: 100%;  
@@ -330,22 +330,26 @@ footer {
 
     header div {
         top: 100px;
-        right: 0px;
+        right: 20px;
     }
 
     header h1 {
-        left: 90px;
+        left: 40px;
     }
 
 
     #about .images-border {
-        left: 50px;
+        left: -60px;
         top: -50px;
     }
 
     #thebat {
-        right: 460px;
+        right:250px;
+        width: 800px;
+        height: 500px;
+        top: 20px;
     }
+
 
     .about {
         flex-direction: row;
@@ -362,9 +366,17 @@ footer {
     .line-break {
         width: 100%;
     }
+
+    .summary-box {
+        left: -300px;
+    }
+
+    .applications {
+        margin: 0 0 0 10px;
+    }
 }
     
-@media only screen and (min-width:414px) and (max-width:768px) {
+@media only screen and (min-width:414px) and (max-width:767px) {
 
     header {
         height: 300px;
@@ -372,12 +384,8 @@ footer {
 
     header h1 {
         left: 70px;
-        font-size: 25px;
+        font-size: 20px;
 
-    }
-
-    .line-break {
-        width: 100%;
     }
 
     header div {
@@ -415,8 +423,6 @@ footer {
 
     
     .applications {
-        position: relative;
-        left:  45px;
         font-size: 13px;
         flex-direction: column;
     }
@@ -434,14 +440,10 @@ footer {
     }
 
     #thebat {
-        height: 300px;
-        top: -20px;
-        right: 120px;
-    }
-
-    #thebat:hover {
-        background-image: url(../images/bat-png.png);
-        background-size: 500px;
+        height: 250px;
+        width: 400px;
+        top: 20px;
+        right:50px;
     }
 
 
@@ -485,14 +487,14 @@ footer {
     }
 
     #thebat {
-        width: 200px;
-        height: 300px;
+        width: 100px;
+        height: 200px;
         left: 300px;
         display: none;
     }
 
     #thebat:hover {
-        background-size: 500px;
+       display: none;
     }
 
     .images-border {
@@ -514,7 +516,7 @@ footer {
     header div {
         height: 30px;
         width: 100%;
-        top: -150px;
+        top: -200px;
         right: 10px;     
         border: none;
     }
