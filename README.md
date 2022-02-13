@@ -12,5 +12,7 @@ Hello! I am Ted Jablonowski, and this small portfolio website I made will hopefu
 Feel free to reach out to me at:
 tedmjablonowski@gmail.com
 
+https://tedmjablonowski.github.io/Ted-Jablonowski-s-Portfolio/
+
 ![The Bat-Coder](https://github.com/tedmjablonowski/Ted-Jablonowski-s-Portfolio/blob/main/assets/images/bat-png.png)
 
