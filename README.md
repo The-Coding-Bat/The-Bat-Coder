@@ -14,5 +14,7 @@ tedmjablonowski@gmail.com
 
 https://tedmjablonowski.github.io/Ted-Jablonowski-s-Portfolio/
 
+![Page Screenshot!](https://github.com/tedmjablonowski/Ted-Jablonowski-s-Portfolio/blob/main/assets/images/screenshot.jpg)
+
 ![The Bat-Coder](https://github.com/tedmjablonowski/Ted-Jablonowski-s-Portfolio/blob/main/assets/images/bat-png.png)
 
