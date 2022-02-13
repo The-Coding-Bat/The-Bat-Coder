@@ -1,0 +1,530 @@
+/* Universal Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+
+/* Body Styling */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/* Header Styling */
+
+header {
+    position: relative;
+    text-align: center;
+    height: 100px;
+    background-image: url(../images/codingbackground.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 9999;
+    border: 2px solid darkred;
+}
+
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    -webkit-text-stroke: 2px rgb(24, 0, 160);
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 425px;
+    top: 20px;
+    text-shadow: 3px 3px 7px darkred;
+}
+
+.batlink { 
+    height: 150px;
+    width: 10px;
+    margin-left: -20px;
+    top: -10px;
+}
+
+.batlink:hover {
+    filter: drop-shadow(15px 15px 15px darkred);
+}
+
+.links {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+
+header div {
+    display: flex;
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border: 10px solid darkred;
+    top: 100px;
+    right: 30px;
+    background-color: rgb(0, 0, 0);
+    flex: 1;
+    justify-content: space-around;
+}
+
+header nav ul {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav li {
+    display: inline-block;
+    flex: auto;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    position: relative;
+    right: 0px;
+    top: 7px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 5px;
+    font-weight: lighter;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    flex-wrap: wrap;
+  }
+
+  /* Anchor Styling */
+
+a:active {
+      color:red;
+  }
+
+  /* Summary Box Styling */
+
+
+.summary-box {
+    color: black;
+    color: red;
+    -webkit-text-stroke: rgb(0, 0, 0) 2px;
+    font-size: 25px;
+    width: 400px;
+    height: 150px;
+    margin: 100px auto 100px auto;
+    padding-bottom: 20px;
+    border: 4px solid navy;
+    border-bottom: 7px solid navy;
+    background-image: url(../images/codingbackground.webp);
+    background-size: auto;
+    text-align: center;
+}
+
+.summary-box img {
+    height: -1100px;
+    width: 400px;
+    position: relative;
+    left: 10px;
+    bottom: -10px;
+    text-align: center;
+}
+
+/* HR line Styling */
+
+.line-break {
+    border: 2px solid blue;
+    width: 100%;
+    background-color: blue;
+ }
+
+ /* Images and Texts Styling */
+
+.images-border {
+     display: inline-block;
+     position: relative;
+     top: -30px;
+     width: 350px;
+     height: 450px;
+     padding: 20px;
+     border: 10px solid navy;
+     border-radius: 25px;
+     flex-wrap: wrap;
+     margin-bottom: 15px;
+ }
+
+ #about .images-border {
+    margin-left: 250px;
+    height: fit-content;
+    width: fit-content;
+ }
+
+.run-buddy-text {
+     font-style: italic;
+     font-weight: bold;
+     font-size: 32px;
+     color: #fce138;
+     -webkit-text-stroke: 2px navy;
+     position: relative;
+     bottom: 50px;
+     left: 80px;
+ }
+
+ .images-edit {
+     height: 450px;
+     width: 350px;
+     flex-wrap: wrap;
+ }
+.images-edit:hover {
+     background-color: navy;
+     opacity: 1.0;
+ }
+
+ /* Application Section Styling */
+
+
+
+.applications {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     align-content: center;
+ }
+
+
+ /* Article Styling */
+
+article {
+    box-sizing: border-box;
+    width: 50%;
+    height: 400px;
+    padding: 50px;
+    border: 2px solid darkred;
+    top: 30px;
+    left: 300px;
+    background-color: royalblue;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 70%;
+    text-align: center;
+  }
+
+article h2 {
+      color: red;
+      -webkit-text-stroke: 2px black;
+      font-size: 30px;
+      flex-wrap: wrap;
+      text-align: center;
+  }
+
+
+  /* Contact Section Styling */
+
+#contact nav ul div {
+    display: inline;
+    position: relative;
+    height: 50px;
+    width: 75%;
+    padding: 10px;
+    border: 10px solid navy;
+    margin: auto;
+    bottom: 50px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+#contact nav ul {
+    list-style: none;
+    display: inline;
+}
+
+#contact nav li {
+    display: inline-block;
+}
+
+#contact nav ul li a {
+    padding: 10px 15px;
+    position: relative;
+    right: 0px;
+    top: -3px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 5px;
+    font-weight: lighter;
+    font-size: 2vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  /* Footer Styling */
+
+footer {
+      background-color: navy;
+      margin: auto;
+      height: 100px;
+      position: relative;
+      border: 5px solid darkred;
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 986px) and (max-width: 1280px){
+
+    header h1 {
+        left: 250px;
+    }
+
+    #about .images-border {
+        left: 180px;
+    }
+
+    .applications {
+        margin-left: 0px;
+        flex-direction: row;
+        justify-content: space-around;
+        right: -100px;;
+    }
+
+    article {
+        width: 100%;
+        margin-bottom: 60px;
+        float: right;
+    }
+
+    #thebat {
+        left: -90px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 985px){
+
+    header {
+      width: 100%;  
+    } 
+
+    header div {
+        top: 100px;
+        right: 20px;
+    }
+
+    header h1 {
+        left: 40px;
+    }
+
+
+    #about .images-border {
+        left: -60px;
+        top: -50px;
+    }
+
+    #thebat {
+        right:250px;
+        width: 800px;
+        height: 500px;
+        top: 20px;
+    }
+
+
+    .about {
+        flex-direction: row;
+    }
+    
+    article {
+        float: right;
+        width: 100%;
+        bottom: 100px;
+        margin-bottom: 60px;
+        text-align: right;
+        }
+
+    .line-break {
+        width: 100%;
+    }
+
+    .summary-box {
+        left: -300px;
+    }
+
+    .applications {
+        margin: 0 0 0 10px;
+    }
+}
+    
+@media only screen and (min-width:414px) and (max-width:767px) {
+
+    header {
+        height: 100px;
+    }
+
+    header h1 {
+        left: 70px;
+        font-size: 20px;
+
+    }
+
+    header div {
+        position: relative;
+        height: 30px;
+        width: 100%;
+        right: 10px;
+        top: -50px;
+        display: flex;
+        flex-direction: row;
+        border: none;
+    }
+
+    header nav ul li a {
+        right: 0px;
+        top: 10px;
+        flex-wrap: wrap;
+      }
+
+    footer{
+        width: 100%;
+        right: -3px;
+    }
+
+    #about .images-border {
+        left: -250px;
+    }
+
+
+    .images-edit {
+        width: 350px;
+        height: 450px;
+         position: static;
+    }
+
+    
+    .applications {
+        font-size: 13px;
+        flex-direction: column;
+    }
+
+
+    article {
+        width: 100%;
+        display: flex;
+        flex-wrap:wrap ;
+       margin: auto auto 20px 30px;
+    }
+
+    article h2 {
+        font-size: 23px
+    }
+
+    #thebat {
+        height: 250px;
+        width: 400px;
+        top: 20px;
+        right:50px;
+    }
+
+
+    #contact nav ul div {
+       
+        height: 50px;
+        width: 90%;
+        padding: 10px;
+        border: 10px solid navy;
+        margin: auto;
+        bottom: 50px;
+        background-color: rgb(0, 0, 0);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    #contact nav ul li a {
+        right: 0px;
+        top: 10px;
+        font-size: 15px;
+        flex-shrink: 70%;
+      }
+}
+
+@media only screen and (min-width:375px) and (max-width: 413px) {
+
+    header {
+        width: 100%;
+        height: 100px;
+}
+
+    header h1 {
+        font-size: 32px;
+        left: -10px;
+    }
+
+    header div {
+        bottom: 200px;
+    }
+
+    #thebat {
+        width: 100px;
+        height: 200px;
+        left: 300px;
+        display: none;
+    }
+
+    #thebat:hover {
+       display: none;
+    }
+
+    .images-border {
+        width: 300px;
+        height: 400px;
+        flex-shrink: 30%;
+    }
+
+    .images-edit {
+        width: 300px;
+        height: 400px;
+    }
+    
+
+    #about .images-border{
+        left:-230px;
+    }
+
+    header div {
+        height: 30px;
+        width: 100%;
+        top: -200px;
+        right: 10px;     
+        border: none;
+    }
+
+    article {
+        width: 100%;
+        margin: 0 0 20px 60px;
+        font-size: 15px;
+    }
+
+    .applications {
+        margin-right: -30px;
+        flex: 0 50% 300px;
+    }
+
+    .summary-box {
+        width: 300px;
+    }
+
+    .batlink { 
+        display: none;
+    }
+
+}
