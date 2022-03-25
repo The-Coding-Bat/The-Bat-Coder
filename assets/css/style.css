@@ -135,6 +135,16 @@ article {
     margin-bottom: -100px;
 }
 
+#mg-text {
+    font-family: 'Sancreek', cursive;
+    font-size: 40px;
+    color: #c400f5;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+    bottom: 70px;
+    left: 35px;
+}
+
 #contact nav ul {
     width: 75%;
     padding: 10px;
