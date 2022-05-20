@@ -145,6 +145,16 @@ article {
     left: 35px;
 }
 
+#rme-text {
+    font-family: 'Sancreek', cursive;
+    font-size: 40px;
+    color: #f50000;
+    -webkit-text-stroke: 1px black;
+    position: relative;
+    bottom: 65px;
+    left: 90px;
+}
+
 #contact nav ul {
     width: 75%;
     padding: 10px;
